@@ -452,7 +452,6 @@ controller:
     configMapName: ""
     configMapKey: ""
   service:
-    type: NodePort
     # -- Enable controller services or not. This does not influence the creation of either the admission webhook or the metrics service.
     enabled: true
     external:
@@ -464,7 +463,7 @@ controller:
     labels: {}
     # -- Type of the external controller service.
     # Ref: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
-    type: LoadBalancer
+    type: NodePort
     # -- Pre-defined cluster internal IP address of the external controller service. Take care of collisions with existing services.
     # This value is immutable. Set once, it can not be changed without deleting and re-creating the service.
     # Ref: https://kubernetes.io/docs/concepts/services-networking/service/#choosing-your-own-ip-address
