@@ -520,7 +520,7 @@ controller:
     # Ref: https://kubernetes.io/docs/concepts/services-networking/service/#application-protocol
     appProtocol: true
     nodePorts:
-      # -- Node port allocated for the external HTTP listener. If left empty, the service controller allocates one from the configured node port range.
+      # -- Node port allocated for the external HTTP listener. If left empty, the service controller allocatphải es one from the configured node port range.
       http: ""
       # -- Node port allocated for the external HTTPS listener. If left empty, the service controller allocates one from the configured node port range.
       https: ""
